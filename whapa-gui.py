@@ -815,6 +815,7 @@ To export chats on an iOS phone, here are the steps:
             exec = self.system_slash(r'python "{}/libs/update.py" {}'.format(whapa_path, version))
 
         self.label_status.set(exec)
+        print('Command : ' + exec)
         os.system(exec)
 
     def exit(self):
@@ -930,6 +931,7 @@ To export chats on an iOS phone, here are the steps:
         else:
             exec = self.system_slash(r'python "{}/libs/whapa.py" {}'.format(whapa_path, self.cmd))
         self.label_status.set(exec)
+        print('Command : ' + exec)
         os.system(exec)
 
     def whapa_extract(self):
@@ -963,6 +965,7 @@ To export chats on an iOS phone, here are the steps:
         else:
             exec = self.system_slash(r'python "{}/libs/whapa.py" {}'.format(whapa_path, self.cmd))
         self.label_status.set(exec)
+        print('Command : ' + exec)
         os.system(exec)
 
     def whapa_status(self):
@@ -988,6 +991,7 @@ To export chats on an iOS phone, here are the steps:
         else:
             exec = self.system_slash(r'python "{}/libs/whapa.py" {}'.format(whapa_path, self.cmd))
         self.label_status.set(exec)
+        print('Command : ' + exec)
         os.system(exec)
 
     def whapa_call(self):
@@ -1024,6 +1028,7 @@ To export chats on an iOS phone, here are the steps:
             print(exec)
 
         self.label_status.set(exec)
+        print('Command : ' + exec)
         os.system(exec)
 
     def whapa_info(self):
@@ -1044,6 +1049,7 @@ To export chats on an iOS phone, here are the steps:
         else:
             exec = self.system_slash(r'python "{}/libs/whapa.py" {}'.format(whapa_path, self.cmd))
         self.label_status.set(exec)
+        print('Command : ' + exec)
         os.system(exec)
 
     def whapa_carving(self):
@@ -1208,6 +1214,7 @@ To export chats on an iOS phone, here are the steps:
         else:
             exec = self.system_slash(r'python "{}/libs/whacipher.py" {}'.format(whapa_path, self.cmd))
         self.label_status.set(exec)
+        print('Command : ' + exec)
         os.system(exec)
 
     def encrypt_whacypher(self):
@@ -1221,6 +1228,7 @@ To export chats on an iOS phone, here are the steps:
         else:
             exec = self.system_slash(r'python "{}/libs/whacipher.py" {}'.format(whapa_path, self.cmd))
         self.label_status.set(exec)
+        print('Command : ' + exec)
         os.system(exec)
 
     def search_path_whamerge(self):
@@ -1248,6 +1256,7 @@ To export chats on an iOS phone, here are the steps:
             exec = self.system_slash(r'python "{}/libs/whamerge.py" "{}" -o "{}"'.format(whapa_path, self.whamerge_path.get(), self.whamerge_file.get()))
 
         self.label_status.set(exec)
+        print('Command : ' + exec)
         os.system(exec)
 
     def search_file_whachat(self):
@@ -1265,6 +1274,7 @@ To export chats on an iOS phone, here are the steps:
                 exec = self.system_slash(r'python "{}/libs/whachat.py" "{}" -p -s {}'.format(whapa_path, self.whachat_file.get(), self.whachat_box_os.get()))
 
             self.label_status.set(exec)
+            print('Command : ' + exec)
             os.system(exec)
             path, file = os.path.split(self.whachat_file.get())
             participants = path + "/participants.txt"
@@ -1337,6 +1347,7 @@ To export chats on an iOS phone, here are the steps:
             exec = self.system_slash(r'python "{}/libs/whachat.py" {}'.format(whapa_path, self.cmd))
 
         self.label_status.set(exec)
+        print('Command : ' + exec)
         os.system(exec)
 
     def search_path_whagodri(self):
@@ -1389,6 +1400,7 @@ To export chats on an iOS phone, here are the steps:
             exec = self.system_slash(r'python "{}/libs/whagodri.py" {}'.format(whapa_path, self.cmd))
 
         self.label_status.set(exec)
+        print('Command : ' + exec)
         os.system(exec)
 
     def search_path_whacloud(self):
@@ -1428,6 +1440,7 @@ To export chats on an iOS phone, here are the steps:
             exec = self.system_slash(r'python "{}/libs/whacloud.py" {}'.format(whapa_path, self.cmd))
 
         self.label_status.set(exec)
+        print('Command : ' + exec)
         os.system(exec)
 
     def open_folder(self):
@@ -1443,6 +1456,7 @@ To export chats on an iOS phone, here are the steps:
         else:
             exec = self.system_slash(r'pip install --upgrade -r "{}/doc/requirements.txt"'.format(whapa_path))
         self.label_status.set(exec)
+        print('Command : ' + exec)
         os.system(exec)
 
 
